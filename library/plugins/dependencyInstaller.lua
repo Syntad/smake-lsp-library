@@ -62,10 +62,12 @@ function installer:MakeLibraryFolder() end
 
 ---Downloads and unzips a zip from a URL
 ---@param url string The url to download the zip from
----@return table A folder object for the unzipped folder
+---@return folder A folder object for the unzipped folder
 function installer:DownloadAndUnzip(url) end
 
+
 ---Installs a dependency
+---@alias InstallDependencyCallback fun(installer: installer)
 ---@param name string The name of the dependency
----@param callback function The callback function to call when installing the dependency. An installer object is passed as the first
+---@param callback InstallDependencyCallback The callback function to call when installing the dependency. An installer object is passed as the first
 function InstallDependency(name, callback) end
