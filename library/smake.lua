@@ -1,3 +1,5 @@
+---@class smake
+---@field config table A table representing the global and local configurations combined. This allows local configurations to override the global configuration.
 smake = {}
 
 ---Imports a Smake plugin
