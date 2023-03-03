@@ -17,11 +17,13 @@ function folder:CheckValidity() end
 function folder:Move(relFrom, to) end
 
 ---Moves the include folder to the dependency folder
+---@overload fun()
 ---@param path string A relative path to the include folder or nil for `include`
 ---@return folder self
 function folder:MoveInclude(path) end
 
 ---Moves the library folder to the dependency folder
+---@overload fun()
 ---@param path string A relative path to the lib folder or nil for `lib`
 ---@return folder self
 function folder:MoveLibrary(path) end
