@@ -15,8 +15,8 @@ function input(...) end
 function include(includePath, libPath, libName) end
 
 ---Include multiple folders. This is equivalent to `-I<includePath>` for all paths
----@param ... string The include paths
-function include(...) end
+---@param paths table A table of include paths
+function include(paths) end
 
 ---Specifies the output path. This is equivalent to `-o<path>`
 ---@param path string The path to output to
