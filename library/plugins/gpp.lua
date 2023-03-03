@@ -1,3 +1,5 @@
+---@meta
+
 ---@diagnostic disable: duplicate-set-field
 
 ---Specifies the c++ standard. This is equivalent to the `-std=<std>`

@@ -1,3 +1,5 @@
+---@meta
+
 ---@class Platform A static class holding platform information
 ---@field is_windows boolean Whether the platform is Windows or not
 ---@field is_osx boolean Whether the platform is Mac or not
