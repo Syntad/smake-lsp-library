@@ -12,6 +12,7 @@ function input(...) end
 ---@param includePath string The path to the include folder
 ---@param libPath? string The path to the lib folder
 ---@param libName? string The name of a lib file to load
+---@overload fun(paths: table)
 function include(includePath, libPath, libName) end
 
 ---Include multiple folders. This is equivalent to `-I<includePath>` for all paths
