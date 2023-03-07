@@ -4,7 +4,7 @@
 ---@field symbols table A table of strings to use for the animation
 ---@field interval number The delay between each frame in seconds
 ---@field start fun(text: string) Starts the spinner animation with the given text
----@field stop fun() Stops the animation
+---@field stop fun(text?: string) Stops the animation and prints text if provided
 spinner = {}
 
 ---@class smake
