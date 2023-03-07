@@ -5,13 +5,15 @@
 ---@field interval number The delay between each frame in seconds
 spinner = {}
 
---- Starts the spinner animation with the given text
----@param text string The text to display with the spinner
-function spinner.start(text) end
+---Starts the spinner animation
+function spinner.start() end
 
---- Stops the animation and prints text if provided
----@param text? string
-function spinner.stop(text) end
+---Stops the spinner animation
+function spinner.stop() end
+
+---Sets the text for the spinner
+---@param text string The text to use
+function spinner.setText(text) end
 
 ---@class smake
 ---@field config table A table representing the global and local configurations combined. This allows local configurations to override the global configuration.
