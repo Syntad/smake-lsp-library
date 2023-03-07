@@ -3,9 +3,15 @@
 ---@class spinner
 ---@field symbols table A table of strings to use for the animation
 ---@field interval number The delay between each frame in seconds
----@field start fun(text: string) Starts the spinner animation with the given text
----@field stop fun(text?: string) Stops the animation and prints text if provided
 spinner = {}
+
+--- Starts the spinner animation with the given text
+---@param text string The text to display with the spinner
+function spinner.start(text) end
+
+--- Stops the animation and prints text if provided
+---@param text? string
+function spinner.stop(text) end
 
 ---@class smake
 ---@field config table A table representing the global and local configurations combined. This allows local configurations to override the global configuration.
