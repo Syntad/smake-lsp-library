@@ -2,7 +2,7 @@
 
 ---@class spinner
 ---@field symbols table A table of strings to use for the animation
----@field interval number The delay between each frame in seconds
+---@field interval integer The delay between each frame in milliseconds. This must be an integer.
 spinner = {}
 
 ---Starts the spinner animation
