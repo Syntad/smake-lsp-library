@@ -17,7 +17,7 @@ function spinner.setText(text) end
 
 ---@class smake
 ---@field config table A table representing the global and local configurations combined. This allows local configurations to override the global configuration.
----@field spinner spinner A table holding information about the spinner
+---@field spinner spinner A library for console spinners. Look at the official enhancedSpinner plugin for a more abstracted library.
 smake = {}
 
 ---Imports a Smake plugin
