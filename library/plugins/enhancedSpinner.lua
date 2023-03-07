@@ -13,7 +13,9 @@ function SetOptions(options) end
 function SetText(text) end
 
 ---Starts the spinner animation
-function Start() end
+---@param text? string Calls SetText if text is provided
+function Start(text) end
 
 ---Stops the spinner animation
-function Stop() end
+---@param text? string Prints the text after the spinner stops if text is provided
+function Stop(text) end
