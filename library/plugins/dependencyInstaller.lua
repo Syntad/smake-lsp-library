@@ -1,5 +1,8 @@
 ---@meta
 
+---@class dependencyInstaller
+dependencyInstaller = {}
+
 ---@class folder
 folder = {}
 
@@ -67,9 +70,10 @@ function installer:MakeLibraryFolder() end
 ---@return folder A folder object for the unzipped folder
 function installer:DownloadAndUnzip(url) end
 
-
 ---Installs a dependency
 ---@alias InstallDependencyCallback fun(installer: installer)
 ---@param name string The name of the dependency
 ---@param callback InstallDependencyCallback The callback function to call when installing the dependency. An installer object is passed as the first
-function InstallDependency(name, callback) end
+function dependencyInstaller.InstallDependency(name, callback) end
+
+InstallDependency = dependencyInstaller.InstallDependency
