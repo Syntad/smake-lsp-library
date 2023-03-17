@@ -23,6 +23,7 @@ smake = {}
 ---Imports a Smake plugin
 ---@param name string The name of the plugin to import
 ---@param global? boolean Make fields in all of the returned tables global
+---@return any
 function import(name, global) end
 
 ---Runs commands
