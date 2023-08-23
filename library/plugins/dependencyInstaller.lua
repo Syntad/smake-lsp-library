@@ -70,6 +70,11 @@ function installer:MakeLibraryFolder() end
 ---@return folder A folder object for the unzipped folder
 function installer:DownloadAndUnzip(url) end
 
+--- Downloads and extracts a tar file from a URL
+---@param url any The url to download the tar from
+---@return table A folder object for the extracted folder
+function installer:DownloadAndUntar(url)end
+
 ---Installs a dependency
 ---@alias InstallDependencyCallback fun(installer: installer)
 ---@param name string The name of the dependency
