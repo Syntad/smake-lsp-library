@@ -71,8 +71,8 @@ function installer:MakeLibraryFolder() end
 function installer:DownloadAndUnzip(url) end
 
 --- Downloads and extracts a tar file from a URL
----@param url any The url to download the tar from
----@return table A folder object for the extracted folder
+---@param url string The url to download the tar from
+---@return folder A folder object for the extracted folder
 function installer:DownloadAndUntar(url)end
 
 ---Installs a dependency
