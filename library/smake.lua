@@ -20,7 +20,7 @@ function spinner.setText(text) end
 ---@field spinner spinner A library for console spinners. Look at the official enhancedSpinner plugin for a more abstracted library.
 smake = {}
 
----Imports a Smake plugin
+---Imports a Smake plugin. If it does not exist it will return nil.
 ---@param name string The name of the plugin to import
 ---@param global? boolean Make fields in all of the returned tables global
 ---@return any
