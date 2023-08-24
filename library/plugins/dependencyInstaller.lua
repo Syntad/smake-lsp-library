@@ -80,4 +80,9 @@ function installer:DownloadAndUntar(url)end
 ---@param callback fun(installer: installer)? The callback function to call when installing the dependency. An installer object is passed as the first argument. If callback is nil, it will attempt to use a preset installer.
 function dependencyInstaller.InstallDependency(name, callback) end
 
+---Installs a list of preset dependencies
+---@param ... string The name of the dependency
+function dependencyInstaller.InstallDependencies(...) end
+
 InstallDependency = dependencyInstaller.InstallDependency
+InstallDependencies = dependencyInstaller.InstallDependencies
