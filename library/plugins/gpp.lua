@@ -24,6 +24,16 @@ function gpp.include(includePath, libPath, libName) end
 ---@param paths table A table of include paths
 function gpp.include(paths) end
 
+---Adds a library folder and links all names
+---@param libPath? string The path to the lib folder
+---@param ... string The names to link
+---@overload fun(names: table)
+function gpp.link(libPath, ...) end
+
+---Link multiple files. This is equivalent to `-l<name>` for all names
+---@param names table A table of names to link
+function gpp.link(names) end
+
 ---Specifies the output path. This is equivalent to `-o<path>`
 ---@param path string The path to output to
 function gpp.output(path) end
@@ -41,6 +51,7 @@ function gpp.generateCompileFlags() end
 standard = gpp.standard
 input = gpp.input
 include = gpp.include
+link = gpp.link
 output = gpp.output
 flags = gpp.flags
 build = gpp.build
