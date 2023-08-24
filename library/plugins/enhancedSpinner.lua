@@ -1,5 +1,11 @@
 ---@meta
 
+---@class enhancedSpinnerOptions
+---@field interval number? The interval for the spinner
+---@field symbols (string|table)? A string for the preset symbols or a table of symbols
+---@field color (string|number)? The color of the text, can be a string for a preset or an ansi color code
+---@field text string? The text to display. Equivalent to calling SetText
+
 ---@class enhancedSpinner
 enhancedSpinner = {}
 
@@ -8,7 +14,7 @@ enhancedSpinner = {}
 function enhancedSpinner.SetColor(color) end
 
 ---Sets options for `smake.spinner`
----@param options table A table of options to set for smake.spinner and optionally `color` and `text`
+---@param options enhancedSpinnerOptions The options to set for smake.spinner
 function enhancedSpinner.SetOptions(options) end
 
 ---Sets the text for the spinner
