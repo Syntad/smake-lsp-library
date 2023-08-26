@@ -34,6 +34,10 @@ function gpp.link(libPath, ...) end
 ---@param names table A table of names to link
 function gpp.link(names) end
 
+---Link MacOS framework(s). This is equivalent to `-framework<frameworkName>` for all frameworks
+---@param ... string A list of frameworks to link.
+function gpp.framework(...) end
+
 ---Specifies the output path. This is equivalent to `-o<path>`
 ---@param path string The path to output to
 function gpp.output(path) end
