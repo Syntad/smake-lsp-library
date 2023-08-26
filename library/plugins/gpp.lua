@@ -56,6 +56,7 @@ standard = gpp.standard
 input = gpp.input
 include = gpp.include
 link = gpp.link
+framework = gpp.framework
 output = gpp.output
 flags = gpp.flags
 build = gpp.build
