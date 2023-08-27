@@ -31,6 +31,11 @@ function folder:MoveInclude(path) end
 ---@return folder self
 function folder:MoveLibrary(path) end
 
+--- Moves the library file to the dependency library folder
+---@param path any A relative path to the lib file
+--- @return folder self
+function folder:MoveLibraryFile(path)end
+
 ---Run commmand(s) in the folder
 ---@param ... string The commands to run
 ---@return folder self
