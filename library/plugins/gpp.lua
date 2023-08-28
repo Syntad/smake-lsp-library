@@ -13,6 +13,11 @@ function gpp.standard(std) end
 ---@param ... string The input paths
 function gpp.input(...) end
 
+---Inputs files from folders recursively. This is equivalent to `<folder>/*.<extension>` for any folders that contain 1 or more of a file with the specified extension.
+---@param folder string The folder to search
+---@param extension string? The extension to include, or 'cpp' if nil
+function gpp.inputr(folder, extension) end
+
 ---Adds an include folder, possibly a library path, and possibly a library name. This is equivalent to `-I<includePath> -L<libPath> -l<libName>`
 ---@param includePath string The path to the include folder
 ---@param libPath? string The path to the lib folder
