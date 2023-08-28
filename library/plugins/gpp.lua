@@ -59,6 +59,7 @@ function gpp.generateCompileFlags() end
 
 standard = gpp.standard
 input = gpp.input
+inputr = gpp.inputr
 include = gpp.include
 link = gpp.link
 framework = gpp.framework
