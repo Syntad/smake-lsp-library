@@ -5,6 +5,10 @@
 ---@class gpp
 gpp = {}
 
+---Sets the compiler. Generally only used to change from `g++` to `gcc`
+---@param compiler string The name of the compiler, defaults to `g++`
+function gpp.compiler(compiler)end
+
 ---Specifies the c++ standard. This is equivalent to the `-std=<std>`
 ---@param std string The c++ standard
 function gpp.standard(std) end
@@ -57,6 +61,7 @@ function gpp.build() end
 ---Generates `compile_flags.txt` for clangd.
 function gpp.generateCompileFlags() end
 
+compiler = gpp.compiler
 standard = gpp.standard
 input = gpp.input
 inputr = gpp.inputr
