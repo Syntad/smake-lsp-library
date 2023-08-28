@@ -1,5 +1,10 @@
 ---@meta
 
+---@class Plugin
+---@field Command fun(...)
+---@field Import fun()
+Plugin = {}
+
 ---@class spinner
 ---@field symbols table A table of strings to use for the animation
 ---@field interval integer The delay between each frame in milliseconds. This must be an integer.
