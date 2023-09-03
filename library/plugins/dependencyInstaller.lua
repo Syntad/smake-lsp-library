@@ -27,13 +27,15 @@ function folder:Copy(relFrom, to) end
 
 --- Moves the include folder to the dependency folder
 --- @param path any A relative path to the include folder or nil for `include`
+--- @param folderName any An optional name for the include directory. For example if you set this to `test` your include folder will be `include/test/*`. 
 --- @return folder self
-function folder:MoveIncludeFolder(path) end
+function folder:MoveIncludeFolder(path, folderName) end
 
 --- Moves all headers from a folder to the include folder
 --- @param path string The path to move all .h and .hpp files from or nil for the folder path
+--- @param folderName any An optional name for the include directory. For example if you set this to `test` your include folder will be `include/test/*`.
 --- @return folder self
-function folder:MoveHeaders(path) end
+function folder:MoveHeaders(path, folderName) end
 
 --- Moves the library folder to the dependency folder
 ---@param path any A relative path to the lib folder or nil for `lib`
