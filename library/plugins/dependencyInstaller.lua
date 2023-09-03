@@ -13,28 +13,42 @@ function folder:ConcatenatePath(path) end
 ---Checks the validity of the folder, and errors if it is invalid
 function folder:CheckValidity() end
 
----Moves a file from the folder to another path
----@param relFrom string A path relative to the folder
----@param to string A path to move the item to
----@return folder self
+--- Moves a file from the folder to another path
+--- @param relFrom any A path relative to the folder
+--- @param to any A path to move the item to
+--- @return folder self
 function folder:Move(relFrom, to) end
 
----Moves the include folder to the dependency folder
----@overload fun()
----@param path string A relative path to the include folder or nil for `include`
----@return folder self
-function folder:MoveInclude(path) end
+--- Copies a file from the folder to another path following symbolic links
+--- @param relFrom any A path relative to the folder
+--- @param to any A path to move the item to
+--- @return folder self
+function folder:Copy(relFrom, to) end
 
----Moves the library folder to the dependency folder
----@overload fun()
----@param path string A relative path to the lib folder or nil for `lib`
----@return folder self
-function folder:MoveLibrary(path) end
+--- Moves the include folder to the dependency folder
+--- @param path any A relative path to the include folder or nil for `include`
+--- @return folder self
+function folder:MoveIncludeFolder(path) end
+
+--- Moves all headers from a folder to the include folder
+--- @param path string The path to move all .h and .hpp files from or nil for the folder path
+--- @return folder self
+function folder:MoveHeaders(path) end
+
+--- Moves the library folder to the dependency folder
+---@param path any A relative path to the lib folder or nil for `lib`
+--- @return folder self
+function folder:MoveLibraryFolder(path) end
 
 --- Moves the library file to the dependency library folder
 ---@param path any A relative path to the lib file
 --- @return folder self
-function folder:MoveLibraryFile(path)end
+function folder:MoveLibrary(path) end
+
+--- Moves all libraries from a folder to the library folder
+--- @param path string The path to move all .a, .so, and .dylib files from or nil for the folder path
+--- @return folder self
+function folder:MoveLibraries(path) end
 
 ---Run commmand(s) in the folder
 ---@param ... string The commands to run
