@@ -2,7 +2,7 @@
 
 ---@class Plugin
 ---@field Command fun(...)
----@field Import fun()
+---@field Import fun(): any
 Plugin = {}
 
 ---@class spinner

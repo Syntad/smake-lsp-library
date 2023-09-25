@@ -96,6 +96,11 @@ function installer:DownloadAndUnzip(url) end
 ---@return folder A folder object for the extracted folder
 function installer:DownloadAndUntar(url)end
 
+--- Downloads a git repository
+---@param url any The url to clone the repo from
+---@return table A folder object for the unzipped folder
+function installer:GitClone(url)end
+
 ---Installs a dependency
 ---@param name string The name of the dependency
 ---@param callback fun(installer: installer)? The callback function to call when installing the dependency. An installer object is passed as the first argument. If callback is nil, it will attempt to use a preset installer.
