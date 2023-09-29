@@ -88,17 +88,17 @@ function installer:MakeLibraryFolder() end
 
 ---Downloads and unzips a zip from a URL
 ---@param url string The url to download the zip from
----@return folder A folder object for the unzipped folder
+---@return folder folder folder object for the unzipped folder
 function installer:DownloadAndUnzip(url) end
 
 --- Downloads and extracts a tar file from a URL
 ---@param url string The url to download the tar from
----@return folder A folder object for the extracted folder
+---@return folder folder A folder object for the extracted folder
 function installer:DownloadAndUntar(url)end
 
 --- Downloads a git repository
 ---@param url any The url to clone the repo from
----@return table A folder object for the unzipped folder
+---@return folder folder A folder object for the unzipped folder
 function installer:GitClone(url)end
 
 ---Installs a dependency
